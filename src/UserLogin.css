@@ -1,0 +1,100 @@
+/* UserLogin.css */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-frame {
+  animation: fadeIn 0.6s ease-out;
+}
+
+
+.login-frame {
+  width: 340px;
+  height: 750px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.back-arrow {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: #dabbfa;
+  font-size: 26px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.login-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 10px 0;
+}
+
+.login-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.login-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.login-input {
+  width: 100%;
+  padding: 14px 16px; /* smaller padding */
+  background-color: rgba(252, 233, 239, 0.6); /* pastel pink, translucent */
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); /* soft bubble */
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  color: #1f2937;
+  outline: none;
+  box-sizing: border-box; /* critical: ensures padding stays inside width */
+  margin-bottom: 20px;
+}
+
+
+
+.login-button {
+  background-color: #dabbfa;
+  color: #27333f;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 90%;
+  margin-top: 20px;
+  cursor: pointer;
+}

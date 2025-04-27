@@ -1,0 +1,113 @@
+/* MoodCheck.css */
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .mood-frame {
+    width: 340px;
+    height: 750px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  .back-arrow {
+    align-self: flex-start;
+    background: none;
+    border: none;
+    color: #dabbfa;
+    font-size: 26px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .mood-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 10px 0;
+  }
+  
+  .mood-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #6b7280;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .slider-container {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .mood-slider {
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #f1f1f1;
+    height: 4px;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .mood-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background: #27333f;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .mood-slider::-webkit-slider-thumb:hover {
+    background: #1f2937;
+  }
+  
+  .emoji-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+  
+  .emoji {
+    font-size: 26px;
+    transition: transform 0.3s ease;
+  }
+  
+  .emoji:hover {
+    transform: scale(1.2);
+  }
+  
+  .next-button {
+    background-color: #dabbfa;
+    color: #27333f;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 90%;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
