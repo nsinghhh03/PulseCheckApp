@@ -1,120 +1,123 @@
 /* MentalClarityA.css */
 
 .clarity-frame {
-    width: 340px;
-    height: 750px;
-    background-color: #ffffff;
-    border-radius: 40px;
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-  }
-  
-  .fade-in {
-    animation: fadeIn 0.6s ease-in-out;
-  }
-  
-  @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
-  
-  .back-arrow {
-    align-self: flex-start;
-    background: none;
-    border: none;
-    color: #dabbfa;
-    font-size: 26px;
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
-  
-  .clarity-title {
-    font-family: 'Inter', sans-serif;
-    font-size: 34px;
-    font-weight: 700;
-    color: #1f2937;
-    margin: 10px 0;
-  }
-  
-  .clarity-subtitle {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    color: #6b7280;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .clarity-question {
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    color: #1f2937;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  
-  .clarity-options {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-bottom: 30px;
-  }
-  
-  .clarity-option {
-    width: 100%;
-    padding: 18px 20px;
-    border: 2px solid #dabbfa;
-    border-radius: 16px;
-    background-color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    color: #1f2937;
-    text-align: left;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 0.3s ease;
-  }
-  
-  .clarity-option.selected {
-    background-color: #e2ccf9;
-  }
-  
-  .checkmark {
-    margin-left: auto;
-    font-size: 18px;
-    color: #dabbfa;
-  }
-  
-  .clarity-option.selected .checkmark {
-    color: #a97ee4;
-  }
-  
-  .next-button {
-    background-color: #dabbfa;
-    color: #27333f;
-    border: none;
-    border-radius: 30px;
-    padding: 15px 40px;
-    font-size: 18px;
-    font-weight: bold;
-    width: 90%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
+  width: 340px;
+  height: 750px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
 
-  .loading-text {
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    color: #6b7280;
-    margin-top: 100px;
-  }
-  
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.back-arrow {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: #dabbfa;
+  font-size: 26px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.clarity-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 10px 0;
+}
+
+.clarity-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.clarity-question {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.clarity-options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center; /* Center options horizontally */
+  margin-bottom: 30px;
+}
+
+.clarity-option {
+  width: 90%;
+  padding: 14px 20px;
+  border: 2px solid #dabbfa;
+  border-radius: 9999px; /* make bubbles fully round */
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1f2937;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clarity-option.selected {
+  background-color: #e2ccf9;
+  border-color: #a97ee4;
+}
+
+.checkmark {
+  position: absolute;
+  right: 20px;
+  font-size: 18px;
+  color: #dabbfa;
+}
+
+.clarity-option.selected .checkmark {
+  color: #a97ee4;
+}
+
+.next-button {
+  background-color: #dabbfa;
+  color: #27333f;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 90%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loading-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #6b7280;
+  margin-top: 100px;
+}

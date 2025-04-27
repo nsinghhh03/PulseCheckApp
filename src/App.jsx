@@ -7,7 +7,8 @@ import MoodCheck from './MoodCheck';
 import SleepCheck from './SleepCheck';
 import StressCheck from './StressCheck';
 import FoodIntake from './FoodIntake';
-import MentalClarityA from './MentalClarityA'; // Import MentalClarityA
+import MentalClarityA from './MentalClarityA';
+import Exit from './Exit'; // Import Exit screen
 
 function App() {
   const [page, setPage] = useState('home');
@@ -35,8 +36,8 @@ function App() {
   const handleBackToFoodIntake = () => setPage('foodintake');
 
   const handleNextFromMentalClarityA = () => {
-    console.log('Mental Clarity A completed — proceed to next page.');
-    // Example: setPage('mentalclarityb') or finish quiz
+    console.log('Mental Clarity A completed — proceed to Exit screen.');
+    setPage('exit'); // Move to Exit page
   };
 
   return (
@@ -49,6 +50,7 @@ function App() {
       {page === 'stresscheck' && <StressCheck onBack={handleBackToSleepCheck} onNext={handleNextFromStressCheck} />}
       {page === 'foodintake' && <FoodIntake onBack={handleBackToStressCheck} onNext={handleNextFromFoodIntake} />}
       {page === 'mentalclaritya' && <MentalClarityA onBack={handleBackToFoodIntake} onNext={handleNextFromMentalClarityA} />}
+      {page === 'exit' && <Exit onBack={handleBackToHome} />}
     </div>
   );
 }
