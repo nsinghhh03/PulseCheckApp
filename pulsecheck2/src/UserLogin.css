@@ -1,0 +1,94 @@
+/* UserLogin.css */
+
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    color: #dabbfa;
+    font-size: 26px;
+    cursor: pointer;
+  }
+  
+  
+
+  .login-frame {
+    position: relative; /* NEW */
+    width: 340px;
+    height: 750px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 60px 20px 20px 20px; /* increased top padding for spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  
+  .login-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #27333f;
+    margin-top: 60px;
+    margin-bottom: 8px;
+  }
+  
+  .login-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #6b7280;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .login-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .login-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #27333f;
+    margin-bottom: 6px;
+  }
+  
+  .login-input {
+    padding: 14px 16px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    background-color: rgba(228, 63, 101, 0.2); /* pastel pink */
+    color: #27333f;
+    outline: none;
+  }
+  
+  .login-input::placeholder {
+    color: #6b7280;
+  }
+  
+  .login-button {
+    margin-top: 40px;
+    background-color: #DABBFA;
+    color: #27333f;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .login-button:hover {
+    background-color: #caa6f3;
+  }
+  
