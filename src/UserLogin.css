@@ -70,7 +70,7 @@
 }
 
 .login-input {
-  width: 100%;
+  width: 280px;
   padding: 14px 16px; /* smaller padding */
   background-color: rgba(252, 233, 239, 0.6); /* pastel pink, translucent */
   border: none;
@@ -94,7 +94,11 @@
   padding: 15px 40px;
   font-size: 18px;
   font-weight: bold;
-  width: 90%;
-  margin-top: 20px;
+  width: 90%; /* or 80% if you want slightly narrower */
+  max-width: 300px; /* optional for even better control */
+  margin: 20px auto 0 auto; /* THIS centers it horizontally */
+  display: block; /* ensures margin auto works */
+  text-align: center; /* text inside button stays centered */
   cursor: pointer;
 }
+

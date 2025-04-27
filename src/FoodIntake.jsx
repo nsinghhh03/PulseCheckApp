@@ -11,6 +11,40 @@ function FoodIntake({ onBack, onNext }) {
     'No meal in the last 12 hours',
   ];
 
+  const handleSubmit = async () => {
+    if (!selected) {
+      alert("Please select an option about your food intake.");
+      return;
+    }
+
+    try {
+      const userId = localStorage.getItem("userId");
+      if (!userId) {
+        alert("User not logged in!");
+        return;
+      }
+
+      // Save attempt (ignore if fails)
+      await fetch("http://localhost:3001/api/submitEntry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          userId,
+          foodIntake: selected,
+          timestamp: new Date().toISOString(),
+        }),
+      });
+
+      console.log("Successfully submitted food intake.");
+    } catch (error) {
+      console.warn("Backend save failed during food intake, proceeding anyway...");
+    }
+
+    if (onNext) {
+      onNext(selected); // ✅ MUST pass the selected option!
+    }
+  };
+
   return (
     <div className="fade-in food-frame">
       <button className="back-arrow" onClick={onBack}>←</button>
@@ -31,7 +65,7 @@ function FoodIntake({ onBack, onNext }) {
         ))}
       </div>
 
-      <button className="next-button" onClick={onNext} disabled={!selected}>
+      <button className="next-button" onClick={handleSubmit} disabled={!selected}>
         Next →
       </button>
     </div>

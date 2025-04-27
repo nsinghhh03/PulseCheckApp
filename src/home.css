@@ -79,11 +79,15 @@
 
 /* Admin link */
 .admin-link {
+  background: none; /* REMOVE white background */
+  border: none; /* REMOVE button border */
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   color: #DABBFA;
   margin-top: 10px;
   animation: fadeIn 2.2s ease;
+  cursor: pointer; /* Add pointer cursor to look like a link */
+  text-decoration: underline; /* Optional if you want it to look even more like a link */
 }
 
 /* Animations */

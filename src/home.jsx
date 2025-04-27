@@ -2,10 +2,9 @@
 import React from 'react';
 import './Home.css';
 
-function Home({ onStart }) {
+function Home({ onStart, onAdminStart }) {
   return (
     <div className="phone-frame">
-      
       <div className="top-half">
         <img src="/src/assets/logo.svg" alt="PulseCheck Logo" className="logo" />
       </div>
@@ -21,11 +20,10 @@ function Home({ onStart }) {
           Start →
         </button>
 
-        <p className="admin-link">
+        <button className="admin-link" onClick={onAdminStart}>
           Are you an admin member?
-        </p>
+        </button>
       </div>
-
     </div>
   );
 }

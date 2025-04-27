@@ -1,0 +1,76 @@
+/* AdminLogin.css */
+
+.admin-login-container {
+    width: 340px;
+    height: 750px;
+    background-color: #1f2937; /* same dark navy */
+    border-radius: 40px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  .back-arrow {
+    align-self: flex-start;
+    background: none;
+    border: none;
+    color: #dabbfa;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .admin-login-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .admin-login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .admin-input {
+    width: 100%;
+    padding: 14px 20px;
+    border: 2px solid #dabbfa;
+    border-radius: 16px;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #1f2937;
+  }
+  
+  .admin-login-button {
+    background-color: #dabbfa;
+    color: #27333f;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 90%;
+    align-self: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
